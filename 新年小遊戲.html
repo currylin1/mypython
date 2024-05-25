@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>新年祝賀卡</title>
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<div class="greetings">
+    新年快樂、龍年行大運
+
+
+</div>
+
+<div class="greetings">
+    請翻一張祝賀卡
+</div>
+<div class="image-container">
+    <div class="image-wrapper">
+        <img src="{{ url_for('static', filename='images/image1.jpg') }}" onclick="flipCard(this, '{{ url_for('static', filename='images/alternate1.jpg') }}', '')">
+        <div class="details"></div>
+    </div>
+    <div class="image-wrapper">
+        <img src="{{ url_for('static', filename='images/image2.jpg') }}" onclick="flipCard(this, '{{ url_for('static', filename='images/alternate2.jpg') }}', '')">
+        <div class="details"></div>
+    </div>
+    <div class="image-wrapper">
+        <img src="{{ url_for('static', filename='images/image3.jpg') }}" onclick="flipCard(this, '{{ url_for('static', filename='images/alternate3.jpg') }}', '')">
+        <div class="details"></div>
+    </div>
+    <div class="image-wrapper">
+        <img src="{{ url_for('static', filename='images/image4.jpg') }}" onclick="flipCard(this, '{{ url_for('static', filename='images/alternate4.jpg') }}', '')">
+        <div class="details"></div>
+    </div>
+    <div class="image-wrapper">
+        <img src="{{ url_for('static', filename='images/image5.jpg') }}" onclick="flipCard(this, '{{ url_for('static', filename='images/alternate5.jpg') }}', '')">
+        <div class="details"></div>
+    </div>
+</div>
+
+<div class="footer-image">
+    <img src="{{ url_for('static', filename='images/4k.jpg') }}" alt="Footer Image">
+</div>
+
+
+<script src="{{ url_for('static', filename='js/game.js') }}"></script>
+
+
+</body>
+</html>
